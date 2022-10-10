@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="923.0" prefWidth="977.0" style="-fx-background-color: edf6f9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeController">
+   <children>
+      <Label layoutX="388.0" layoutY="22.0" text="Employee" textFill="#0b2dee">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="410.0" layoutY="91.0" mnemonicParsing="false" onAction="#switchToCreatAccPanel" text="Create Account" textFill="#249a24">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="357.0" layoutY="136.0" text="Deposit or Withdraw" textFill="#009bd3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dAccNum" layoutX="331.0" layoutY="178.0" prefHeight="25.0" prefWidth="341.0" />
+      <TextField fx:id="ammount" layoutX="332.0" layoutY="219.0" prefHeight="25.0" prefWidth="341.0" />
+      <Button layoutX="347.0" layoutY="256.0" mnemonicParsing="false" onAction="#deposit" prefHeight="25.0" prefWidth="67.0" text="Deposit" textFill="#4f9e3a" />
+      <Button layoutX="588.0" layoutY="256.0" mnemonicParsing="false" onAction="#withdraw" text="Withdraw" textFill="#249a24" />
+      <Label layoutX="207.0" layoutY="181.0" text="Account Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="223.0" prefHeight="20.0" prefWidth="67.0" text="Ammount">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="417.0" layoutY="324.0" text="Transfer Money" textFill="#2eafeb">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fromAccNum" layoutX="322.0" layoutY="369.0" prefHeight="25.0" prefWidth="350.0" />
+      <TextField fx:id="toAccNum" layoutX="322.0" layoutY="404.0" prefHeight="25.0" prefWidth="350.0" />
+      <Button layoutX="716.0" layoutY="404.0" mnemonicParsing="false" onAction="#transfer" text="Transfer" textFill="#259925" />
+      <Label layoutX="253.0" layoutY="369.0" text="From ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="407.0" text="To">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accNum" layoutX="334.0" layoutY="536.0" prefHeight="25.0" prefWidth="350.0" />
+      <Label layoutX="197.0" layoutY="538.0" text="Account Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="341.0" layoutY="585.0" mnemonicParsing="false" onAction="#summary" text="Summary" textFill="#259925" />
+      <Button layoutX="453.0" layoutY="585.0" mnemonicParsing="false" onAction="#transactions" text="Transactions" textFill="#259925" />
+      <Label layoutX="462.0" layoutY="490.0" text="Display" textFill="#009ffc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="575.0" layoutY="585.0" mnemonicParsing="false" onAction="#listOfAccounts" prefHeight="25.0" prefWidth="106.0" text="List of Accounts" textFill="#259925" />
+      <Label layoutX="223.0" layoutY="642.0" text="Account Type" />
+      <TextField fx:id="accType" layoutX="334.0" layoutY="638.0" prefHeight="25.0" prefWidth="350.0" />
+      <Button layoutX="460.0" layoutY="677.0" mnemonicParsing="false" onAction="#getAccounts" text="Get Accounts" textFill="#259925" />
+      <TextField fx:id="trsAmmount" layoutX="322.0" layoutY="442.0" prefHeight="25.0" prefWidth="350.0" />
+      <Button layoutX="33.0" layoutY="874.0" mnemonicParsing="false" onAction="#backToLogin" text="HOME" textFill="#36a8a0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="243.0" layoutY="446.0" text="Ammount" />
+      <ListView fx:id="listView" layoutX="166.0" layoutY="718.0" prefHeight="191.0" prefWidth="645.0" />
+      <Label fx:id="error1" layoutX="716.0" layoutY="182.0" textFill="#ff0101" />
+      <Label fx:id="error2" layoutX="702.0" layoutY="225.0" textFill="#ff0606" />
+      <Label fx:id="error3" layoutX="702.0" layoutY="260.0" textFill="#f80707" />
+      <Label fx:id="error4" layoutX="702.0" layoutY="373.0" textFill="RED" />
+      <Label fx:id="error5" layoutX="702.0" layoutY="446.0" textFill="RED" />
+      <Label fx:id="error6" layoutX="702.0" layoutY="473.0" textFill="RED" />
+      <Label fx:id="error7" layoutX="716.0" layoutY="540.0" textFill="RED" />
+      <Button fx:id="exitButton" layoutX="893.0" layoutY="874.0" mnemonicParsing="false" onAction="#exit" text="EXIT" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

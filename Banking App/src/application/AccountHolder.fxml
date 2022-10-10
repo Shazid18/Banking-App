@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="887.0" prefWidth="1043.0" style="-fx-background-color: edf6f9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccountHolderController">
+   <children>
+      <Label layoutX="397.0" layoutY="40.0" text="Account Holder" textFill="#2200ff">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accNum" layoutX="282.0" layoutY="202.0" prefHeight="32.0" prefWidth="566.0" />
+      <Label layoutX="131.0" layoutY="208.0" text="Account Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="377.0" layoutY="266.0" mnemonicParsing="false" onAction="#accountSummary" text="Account Summary" textFill="#259925">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="646.0" layoutY="266.0" mnemonicParsing="false" onAction="#transactions" text="Transactions" textFill="#259925">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="507.0" layoutY="431.0" mnemonicParsing="false" onAction="#viewAccounts" text="Enter" textFill="#259925">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="434.0" layoutY="359.0" text="View Accounts" textFill="#0b7cf5">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="827.0" mnemonicParsing="false" onAction="#backToLogin" text="HOME" textFill="#36a8a0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutX="85.0" layoutY="507.0" prefHeight="274.0" prefWidth="881.0" />
+      <Label fx:id="error1" layoutX="886.0" layoutY="210.0" textFill="RED" />
+      <Button fx:id="exitButton" layoutX="966.0" layoutY="827.0" mnemonicParsing="false" onAction="#exit" text="EXIT" textFill="#ff0606">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

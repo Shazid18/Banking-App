@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1014.0" style="-fx-background-color: edf6f9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Label layoutX="407.0" layoutY="65.0" text="Log-In Panel" textFill="#1202eb">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="195.0" text="Employee" textFill="#198fc6">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="empFld" layoutX="357.0" layoutY="281.0" prefHeight="34.0" prefWidth="302.0" />
+      <Label layoutX="227.0" layoutY="285.0" text="Employee ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="481.0" layoutY="332.0" mnemonicParsing="false" onAction="#eLogin" text="Log-In" textFill="#259925">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="410.0" layoutY="429.0" text="Account Holder" textFill="#1a8ec4">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userFld" layoutX="356.0" layoutY="511.0" prefHeight="34.0" prefWidth="316.0" />
+      <Label layoutX="226.0" layoutY="515.0" text="NID Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="481.0" layoutY="565.0" mnemonicParsing="false" onAction="#userLogin" text="Log-In" textFill="#259925">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="481.0" layoutY="679.0" mnemonicParsing="false" onAction="#exitTest" text="EXIT" textFill="#ff0505">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
